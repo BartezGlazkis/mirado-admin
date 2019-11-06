@@ -1,0 +1,216 @@
+html,
+body {
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+i {
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg-grey {
+    background-color: #E9ECEF;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+.content {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .wrapper-toggled {
+        transform: translate(230px, 0);
+    }
+    .sidebar {
+        margin-left: -230px;
+    }
+}
+
+
+/* fix label padding on mobile */
+
+@media (max-width: 768px) {
+    .col-form-label {
+        padding-top: 0;
+    }
+}
+
+
+/* fixed flash alert */
+
+.alert-flash {
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 9999;
+}
+
+
+/* datatables */
+
+.dataTables_wrapper table {
+    margin: .75rem -1.25rem 1.25rem -1.25rem !important;
+    width: calc(100% + 2.5rem);
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dataTables_wrapper thead,
+.dataTables_wrapper tr:hover {
+    background-color: #f8f9fa !important;
+}
+
+.dataTables_wrapper th,
+.dataTables_wrapper td {
+    padding: .75rem 1.25rem !important;
+    vertical-align: middle !important;
+}
+
+.dataTables_wrapper .dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before {
+    background-color: #ced4da !important;
+    color: #212529 !important;
+    box-shadow: none !important;
+    top: 1rem !important;
+    left: 0 !important;
+    border: 0 !important;
+    border-radius: 0 .25rem .25rem 0 !important;
+}
+
+.dataTables_wrapper .table-search {
+    display: inline-block;
+    position: relative;
+    margin-bottom: .5rem;
+}
+
+.dataTables_wrapper .table-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 768px) {
+    .dataTables_wrapper table {
+        margin-bottom: 0 !important;
+    }
+    .dataTables_paginate ul {
+        justify-content: center !important;
+    }
+}
+
+
+/* markdown */
+
+.editor-toolbar,
+.editor-preview-side,
+.CodeMirror {
+    border-color: #ced4da;
+}
+
+.CodeMirror {
+    height: 400px;
+}
+
+.cm-header {
+    line-height: normal !important;
+}
+
+.editor-preview table,
+.editor-preview-side table,
+.markdown table {
+    margin-bottom: 1rem;
+}
+
+.editor-preview table td,
+.editor-preview table th,
+.editor-preview-side table td,
+.editor-preview-side table th,
+.markdown table th,
+.markdown table td {
+    padding: .5rem;
+}
+
+.markdown table th,
+.markdown table td {
+    border: 1px solid #ced4da;
+}
+
+.editor-preview pre,
+.editor-preview-side pre,
+.markdown pre,
+.editor-preview blockquote,
+.editor-preview-side blockquote,
+.markdown blockquote {
+    padding: 1rem;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+}
+
+.editor-preview blockquote p:last-child,
+.editor-preview-side blockquote p:last-child,
+.markdown blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+.editor-preview blockquote,
+.editor-preview-side blockquote {
+    background-color: #eee;
+}
+
+.markdown pre,
+.markdown blockquote {
+    background-color: #E9ECEF;
+}
+
+.input-group-file .btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    text-align: 0;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.input-group-file .btn-file {
+    position: relative;
+    overflow: hidden;
+    line-height: inherit;
+}
+
+.input-group-file input[type=text] {
+    background-color: #fff;
+}
+
+.panel {
+    position: relative;
+    margin-bottom: 2.143rem;
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: .286rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}

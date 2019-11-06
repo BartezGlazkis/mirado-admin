@@ -1,0 +1,131 @@
+/* panel styling */
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-text {
+    color: rgba(255, 255, 255, .75);
+}
+
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-dark .sidebar-toggle {
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-text {
+    color: rgba(0, 0, 0, .75);
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 1);
+}
+
+.navbar-light .sidebar-toggle {
+    color: rgba(0, 0, 0, 1);
+}
+
+.wrapper {
+    transition: all 0.3s;
+}
+
+.wrapper-toggled .sidebar {
+    margin-left: -230px;
+}
+
+.sidebar {
+    min-width: 230px;
+    max-width: 230px;
+    min-height: calc(100vh - 56px);
+    transition: all 0.3s;
+}
+
+.sidebar .list-admin a {
+    display: block;
+    padding: .75rem 1rem;
+    text-decoration: none;
+}
+
+.sidebar .list-admin ul li {
+    padding-bottom: .75rem;
+}
+
+.sidebar .list-admin ul li a {
+    padding: 0 1rem 0 3.25rem;
+}
+
+.sidebar .list-admin [data-toggle="collapse"] {
+    position: relative;
+}
+
+.sidebar .list-admin [data-toggle="collapse"]:before {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    position: absolute;
+    right: 1rem;
+    width: 1.25rem;
+    text-align: center;
+}
+
+.sidebar .list-admin [aria-expanded="true"]:before {
+    content: "\f0d8";
+}
+
+.sidebar .list-docs b,
+.sidebar .list-docs a {
+    display: block;
+    padding: .25rem 1rem;
+    text-decoration: none;
+}
+
+.sidebar-dark {
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidebar-dark a {
+    color: rgba(255, 255, 255, .75);
+}
+
+.sidebar-dark a:hover,
+.sidebar-dark .active a {
+    color: rgba(255, 255, 255, 1);
+}
+
+.sidebar-dark a:hover,
+.sidebar-dark .active a,
+.sidebar-dark .list-admin ul,
+.sidebar-dark .list-admin [aria-expanded="true"] {
+    background: rgba(0, 0, 0, .15);
+}
+
+.sidebar-dark .list-admin ul li a {
+    background: transparent !important;
+}
+
+.sidebar-light {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sidebar-light a {
+    color: rgba(0, 0, 0, .75);
+}
+
+.sidebar-light a:hover,
+.sidebar-light .active a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.sidebar-light a:hover,
+.sidebar-light .active a,
+.sidebar-light .list-admin ul,
+.sidebar-light .list-admin [aria-expanded="true"] {
+    background: rgba(0, 0, 0, .05);
+}
+
+.sidebar-light .list-admin ul li a {
+    background: transparent !important;
+}
